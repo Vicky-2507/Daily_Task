@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    
+</head>
+<body>
+    <button id="btn">Click Red</button>
+    <p id="textcontent"></p>
+<script>
+//click event
+btn.addEventListener("click", function() { 
+    alert("Button was clicked!");});
+    btn.style.backgroundColor = "red"
+//mouseover event
+btn.addEventListener("mouseover", function() { 
+    alert("Mouse is over the button!")
+    textcontent.textContent = "Mouse is over the button!"
+    btn.style.backgroundColor = "yellow" 
+    ;});
+//mouseout event
+btn.addEventListener("mouseout", function() { 
+    alert("Mouse is out of the button!")
+    textcontent.textContent = "Mouse is out of the button!"
+    btn.style.backgroundColor = "green" 
+    ;});it
+    
+</script>
+</body>
+</html>
