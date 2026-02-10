@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Length Tracker</title>
 </head>
+
 <body>
     <input type="text" id="textInput" placeholder="Type here..." />
-  <p>Length: <span id="lengthCount">0</span></p>
-    
-     <script>
-    const input = document.getElementById("textInput");
-    const lengthDisplay = document.getElementById("lengthCount");
+    <p>Length: <span id="lengthCount">0</span></p>
 
-    input.addEventListener("input", function () {
-      lengthDisplay.textContent = input.value.length;
-    });
-  </script>
+    <script>
+        const input = document.getElementById("textInput");
+        const lengthDisplay = document.getElementById("lengthCount");
+
+        input.addEventListener("input", function () {
+            lengthDisplay.textContent = input.value.length;
+        });
+    </script>
 
 </body>
+
 </html>
