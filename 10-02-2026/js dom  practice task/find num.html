@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numbers Greater Than 10</title>
+</head>
+
+<body>
+
+  <div id="output"></div>
+
+  <script>
+    // Array of numbers
+    const numbers = [3, 7, 12, 5, 18, 10, 25, 8];
+
+    // Get the div
+    const num = document.getElementById("output");
+
+    // Loop through the array
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] > 10) {
+        num.innerHTML += numbers[i] + "<br>";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
