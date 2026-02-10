@@ -20,7 +20,7 @@ function trafficLight(currentcolor, action){
         case "yellow":
             return 5;
         default:
-        return "Invalid Color"
+        return "Invalid color"
         }
         default:
         return "invalid action"
@@ -29,4 +29,4 @@ function trafficLight(currentcolor, action){
 console.log(trafficLight('red', 'next')); // 'green'
 console.log(trafficLight('red', 'time')); // 30 (seconds)
 console.log(trafficLight('yellow', 'next')); // 'red'
-console.log(trafficLight('green', 'time')); // 45 (seconds)git a
+console.log(trafficLight('green', 'time')); // 45 (seconds)
