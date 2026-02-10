@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+
+<body>
+
+    <select id="countrySelect" onchange="showCountry()">
+        <option value="">-- Select Country --</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="Australia">Australia</option>
+    </select>
+
+    <p id="result"></p>
+    <script>
+        function showCountry() {
+            const selectedCountry = document.getElementById("countrySelect").value;
+            const result = document.getElementById("result");
+
+            if (selectedCountry === "") {
+                result.textContent = "";
+            } else {
+                result.textContent = "Selected Country: " + selectedCountry;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
