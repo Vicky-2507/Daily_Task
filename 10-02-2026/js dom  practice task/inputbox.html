@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd Checker</title>
+</head>
+
+<body>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkEvenOdd()" style="background-color: rgb(19, 134, 206); color: white;">Check</button>
+
+
+    <p id="result"></p>
+    <script>
+        function checkEvenOdd() {
+            const num = document.getElementById("numberInput").value;
+            const result = document.getElementById("result");
+
+            if (num === "") {
+                result.textContent = "Please enter a number.";
+                return;
+            }
+
+            if (num % 2 === 0) {
+                result.textContent = num + " is Even";
+            } else {
+                result.textContent = num + " is Odd";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
