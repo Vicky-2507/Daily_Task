@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Paragraphs</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+        padding: 20px;
+    }
+
+    p {
+        background: #f2f2f2;
+        padding: 8px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+    <h2>Dynamic Paragraph Generator</h2>
+
+    <input type="number" id="count" placeholder="Enter number of paragraphs">
+    <br><br>
+
+    <input type="text" id="text" placeholder="Enter paragraph text">
+    <br><br>
+
+    <button onclick="createParagraphs()">Generate</button>
+
+    <div id="container"></div>
+
+    <script>
+        function createParagraphs() {
+            const count = document.getElementById("count").value;
+            const text = document.getElementById("text").value;
+            const container = document.getElementById("container");
+
+            container.innerHTML = "";
+
+            for (let i = 1; i <= count; i++) {
+                const p = document.createElement("p");
+                p.textContent = i + ". " + text;
+                container.appendChild(p);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
